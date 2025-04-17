@@ -38,27 +38,27 @@ const Calculator: React.FC<CalculatorProps> = ({ onSave }) => {
       />
       <div className="flex gap-2">
         <button
-          className="bg-blue-500 px-4 py-2 rounded"
+          className="duration-300 bg-blue-500 hover:bg-sky-700 ease-in-out px-4 py-2 rounded-4xl"
           onClick={() => handleCalculate("sum")}
         >
           Sum
         </button>
         <button
-          className="bg-green-500 px-4 py-2 rounded"
+          className="duration-300 bg-green-500 hover:bg-green-700  ease-in-out text-black px-4 py-2  rounded-4xl"
           onClick={() => handleCalculate("multiply")}
         >
           Multiply
         </button>
         {result !== null && (
           <button
-            className="bg-yellow-500 px-4 py-2 rounded"
+            className="duration-300 bg-yellow-500 hover:bg-yellow-700 ease-in-out px-4 py-2 rounded-4xl"
             onClick={() => onSave(numbers, result)}
           >
             Save
           </button>
         )}
       </div>
-      {result !== null && <p className="mt-3 text-lg">Result: {result}</p>}
+      {result !== null && <p className="duration-300 ease-in-out mt-3 text-lg">Result: {result}</p>}
     </div>
   );
 };

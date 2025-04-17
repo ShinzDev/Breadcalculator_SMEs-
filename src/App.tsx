@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-10">
       <h1 className="text-2xl font-bold text-center mb-6">Calculation App</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         <Calculator onSave={handleSave} />
         <SavedCalculations calculations={calculations} />
       </div>
