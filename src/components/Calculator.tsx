@@ -27,7 +27,7 @@ const Calculator: React.FC<CalculatorProps> = ({ onSave }) => {
   };
 
   return (
-    <div className="p-5 bg-gray-800 text-white rounded-md">
+    <div className="p-5 bg-gray-800 text-white  w-full justify-center rounded-md">
       <h2 className="text-lg font-bold">Enter Numbers</h2>
       <input
         type="text"
@@ -58,7 +58,11 @@ const Calculator: React.FC<CalculatorProps> = ({ onSave }) => {
           </button>
         )}
       </div>
-      {result !== null && <p className="duration-300 ease-in-out mt-3 text-lg">Result: {result}</p>}
+      {result !== null && (
+        <p className="duration-300 ease-in-out mt-3 text-lg">
+          Result: {result}
+        </p>
+      )}
     </div>
   );
 };
