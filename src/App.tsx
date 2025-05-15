@@ -1,12 +1,14 @@
-import Nav from "./components/Nav"
-import Home from "./page/home"
+import CalculatorWithNotes from "./components/CalculatorWithNotes"
+// import Nav from "./components/Nav"
+// import Home from "./page/home"
 
 
 const App = () => {
   return (
     <div>
-      <Nav/>
-      <Home/>
+      {/* <Nav/> */}
+      {/* <Home/> */}
+      <CalculatorWithNotes/>
     </div>
   )
 }
